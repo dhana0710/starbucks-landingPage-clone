@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Landing page</title>
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <div>
+                <a href="#" id="logo"><img src="https://freepngimg.com/thumb/starbucks/24158-7-starbucks-logo-clipart-thumb.png" alt=""></a>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just coffee,<br>It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam tempore pariatur obcaecati libero quia harum, unde sapiente, laborum nemo, culpa at dolore saepe? Eligendi tempore odit placeat aspernatur quaerat ea natus saepe voluptatem
+                    similique, assumenda commodi ipsam dolore veniam asperiores?</p>
+                <a href="#" id="btn_more">Learn More</a>
+            </div>
+            <div class="imgBox animated">
+                <img src="https://freepngimg.com/thumb/starbucks/77325-frappuccino-drink-chocolate-starbucks-matcha-white.png" class="starbucks" alt="starbucks">
+            </div>
+            <ul class="thumb">
+                <li>
+                    <div class="box red" onclick="imgSlider('https://freepngimg.com/thumb/starbucks/77325-frappuccino-drink-chocolate-starbucks-matcha-white.png'); changeCircleColor('#017143')"></div>
+                </li>
+                <li>
+                    <div class="box blue" onclick="imgSlider('https://freepngimg.com/thumb/coffee/62120-coffee-frappuccino-drink-latte-starbucks-unicorn.png'); changeCircleColor('#d752b1')"></div>
+                </li>
+                <li>
+                    <div class="box pink" onclick="imgSlider('https://freepngimg.com/thumb/coffee/62115-tea-coffee-drink-starbucks-latte-free-download-image.png'); changeCircleColor('#eb7495')"></div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(params) {
+            document.querySelector('.starbucks').src = params;
+        }
+
+        function changeCircleColor(params) {
+            document.querySelector('.circle').style.background = params;
+        }
+    </script>
+</body>
+
+</html>
